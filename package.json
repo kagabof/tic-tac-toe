@@ -1,0 +1,35 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe Game",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "ENV=production node ./build/app.js",
+    "dev": "ENV=development nodemon --exec babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagabof/tic_tac_toe.git"
+  },
+  "author": "kagabof",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kagabof/tic_tac_toe/issues"
+  },
+  "homepage": "https://github.com/kagabof/tic_tac_toe#readme",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-node": "^0.0.1-security",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
